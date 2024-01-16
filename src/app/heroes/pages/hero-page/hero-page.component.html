@@ -1,1 +1,54 @@
-<p>hero-page works!</p>
+<ng-template #sectionLoading>
+  <mat-grid-list cols="1">
+    <mat-grid-tile class="flex">
+      <mat-spinner>
+      </mat-spinner>
+      <pre>
+        cargando...
+      </pre>
+    </mat-grid-tile>
+  </mat-grid-list>
+</ng-template>
+
+
+<section *ngIf="hero; else sectionLoading" class="grid mt-2 p-2">
+  <mat-card class="col-12 sm:col-6 shadow-3" >
+    <mat-card-header>
+      <mat-card-title> {{ hero.alter_ego }} </mat-card-title>
+      <mat-card-subtitle> {{ hero.superhero }} </mat-card-subtitle>
+    </mat-card-header>
+
+    <!-- IMG -->
+    <img [src]="hero | heroImage" [alt]="hero.superhero" mat-card-image class="border-round-lg">
+
+  </mat-card>
+
+
+  <mat-card class=" flex flex-column col-12 sm:col-6 shadow-3">
+    <mat-card-header>
+      <mat-card-title>Informacion del heroe</mat-card-title>
+      <mat-card-subtitle> {{ hero.superhero }} </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-list>
+        <mat-list-item> {{ hero.first_appearance }} </mat-list-item>
+        <mat-list-item> {{ hero.characters }} </mat-list-item>
+        <mat-list-item> {{ hero.publisher }} </mat-list-item>
+        <mat-list-item> {{ hero.alter_ego }} </mat-list-item>
+
+        <hr>
+        <mat-chip-listbox>
+          <mat-chip *ngFor="let name of hero.characters.split(',') | slice:0-3">
+            {{ name }}
+          </mat-chip>
+        </mat-chip-listbox>
+
+      </mat-list>
+    </mat-card-content>
+    <section class="top-100">
+      <button mat-raised-button color="warn"
+      (click)="goBack()"
+     >Regresar</button>
+    </section>
+  </mat-card>
+</section>
