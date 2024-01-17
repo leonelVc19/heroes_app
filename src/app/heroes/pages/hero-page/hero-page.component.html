@@ -11,8 +11,8 @@
 </ng-template>
 
 
-<section *ngIf="hero; else sectionLoading" class="grid mt-2 p-2">
-  <mat-card class="col-12 sm:col-6 shadow-3" >
+<section *ngIf="hero; else sectionLoading" class=" h-full grid mt-2 p-2 spacer">
+  <mat-card class="col-12 sm:col-6 lg:col-3 h-full" >
     <mat-card-header>
       <mat-card-title> {{ hero.alter_ego }} </mat-card-title>
       <mat-card-subtitle> {{ hero.superhero }} </mat-card-subtitle>
@@ -20,11 +20,10 @@
 
     <!-- IMG -->
     <img [src]="hero | heroImage" [alt]="hero.superhero" mat-card-image class="border-round-lg">
-
   </mat-card>
 
 
-  <mat-card class=" flex flex-column col-12 sm:col-6 shadow-3">
+  <mat-card class="col-12 sm:col-6 lg:col-9">
     <mat-card-header>
       <mat-card-title>Informacion del heroe</mat-card-title>
       <mat-card-subtitle> {{ hero.superhero }} </mat-card-subtitle>
@@ -45,7 +44,7 @@
 
       </mat-list>
     </mat-card-content>
-    <section class="top-100">
+    <section >
       <button mat-raised-button color="warn"
       (click)="goBack()"
      >Regresar</button>
