@@ -2,18 +2,19 @@
   "users": [
     {
       "id": 1,
-      "usuario": "John Doe",
-      "email": "john.due@gmail.com"
+      "user": "Juan Leonel",
+      "email": "juan.leonel@gmail.com"
     }
   ],
   "heroes": [
     {
       "id": "dc-batman",
-      "superhero": "Batman",
+      "superhero": "Batman7",
       "publisher": "DC Comics",
       "alter_ego": "Bruce Wayne",
       "first_appearance": "Detective Comics #27",
-      "characters": "Bruce Wayne"
+      "characters": "Bruce Wayne",
+      "alt_img": "https://pngimg.com/uploads/batman/batman_PNG51.png"
     },
     {
       "id": "dc-superman",
@@ -21,7 +22,8 @@
       "publisher": "DC Comics",
       "alter_ego": "Kal-El",
       "first_appearance": "Action Comics #1",
-      "characters": "Kal-El"
+      "characters": "Kal-El",
+      "alt_img": "https://i.pinimg.com/originals/81/28/7b/81287b176108edb4e6f50083c056587b.jpg"
     },
     {
       "id": "dc-flash",
@@ -62,14 +64,6 @@
       "alter_ego": "J\"onn J\"onzz",
       "first_appearance": "Detective Comics #225",
       "characters": "Martian Manhunter"
-    },
-    {
-      "id": "dc-robin",
-      "superhero": "Robin/Nightwing",
-      "publisher": "DC Comics",
-      "alter_ego": "Dick Grayson",
-      "first_appearance": "Detective Comics #38",
-      "characters": "Dick Grayson"
     },
     {
       "id": "dc-blue",
@@ -166,6 +160,15 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
+    },
+    {
+      "id": "ZjxoaWB",
+      "superhero": "Komi san",
+      "publisher": "DC Comics",
+      "alter_ego": "Komi ",
+      "first_appearance": "manga ",
+      "characters": "komi ",
+      "alt_img": "https://ih1.redbubble.net/image.1026778347.6238/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
     }
   ]
 }

@@ -10,7 +10,9 @@
   </mat-form-field>
 
   <!-- esas son directivas de angular material -->
-  <button mat-stroked-button color="warn">
+  <button mat-stroked-button color="warn"
+    (click)="onLogin()"
+  >
     <mat-icon>save</mat-icon>
     Ingresar
   </button>

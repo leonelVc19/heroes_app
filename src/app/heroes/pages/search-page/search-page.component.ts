@@ -18,6 +18,7 @@ export class SearchPageComponent {
   public selectedHero?: Hero;
 
   public searchHero() {
+    
     const value: string = this.searchInput.value || '';
 
     return this.heroesServices.getSuggestions( value )
