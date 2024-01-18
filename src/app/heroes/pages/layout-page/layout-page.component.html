@@ -28,7 +28,8 @@
     </button>
     <span class="spacer"></span>
 
-    <button mat-stroked-button>
+    <small class="p-2">{{ currentUser?.email }}</small>
+    <button mat-stroked-button (click)="onLogout()">
       <mat-icon>logout</mat-icon>
       Logout
     </button>
